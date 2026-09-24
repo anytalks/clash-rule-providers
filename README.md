@@ -1,6 +1,6 @@
 # Mihomo rule providers
 
-This public repository stores the provider snapshots used by [clash-o.yaml](https://raw.githubusercontent.com/anytalks/clash-rule-providers/main/clash-o.yaml) consumers, plus personal routing rules. The local config file is intentionally **not** mirrored here because it contains proxy credentials.
+This public repository stores Mihomo rule-provider snapshots and personal routing rules. A companion config is kept separate because it contains the private proxy-node section.
 
 ## Layout
 
