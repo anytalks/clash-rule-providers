@@ -1,4 +1,4 @@
-# Personal rules copied from the old config and separated from refreshed upstream lists.
+# Personal rules from the old config and later routing overrides.
 # Format: Clash rule,policy; the provider snapshots below contain only match expressions.
 #
 # Direct: private/custom domains routed directly.
