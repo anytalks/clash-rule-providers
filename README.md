@@ -17,7 +17,7 @@ The companion Clash config uses the same 16 routing group names as the local Sur
 ## Sources
 
 - [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) for compiled MRS geosite and geoip data.
-- [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) for proxy, global media, China media, Google FCM, and NetEase Music rules.
+- [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) for GitHub, Microsoft, WeChat, Speedtest, Scholar, proxy, and media rules.
 - [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) for app-clean rules.
 - [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules) for application and LAN CIDR lists.
 
