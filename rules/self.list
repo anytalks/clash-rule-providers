@@ -1,0 +1,62 @@
+# Personal rules copied from the old config and separated from refreshed upstream lists.
+# Format: Clash rule,policy; the provider snapshots below contain only match expressions.
+#
+# Direct: private/custom domains routed directly.
+DOMAIN-SUFFIX,anytalks.net,DIRECT
+DOMAIN-SUFFIX,anytalks.top,DIRECT
+DOMAIN-SUFFIX,zstaticcdn.com,DIRECT
+DOMAIN-KEYWORD,anytalks,DIRECT
+#
+# Domestic exceptions and local download behavior.
+DOMAIN-SUFFIX,ol.epicgames.com,🎯 国内网络
+DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 国内网络
+DOMAIN,dl.google.com,🎯 国内网络
+DOMAIN-SUFFIX,googletraveladservices.com,🎯 国内网络
+DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 国内网络
+DOMAIN-SUFFIX,tz.anytalks.top,🎯 国内网络
+DOMAIN,origin-a.akamaihd.net,🎯 国内网络
+DOMAIN,fairplay.l.qq.com,🎯 国内网络
+DOMAIN,livew.l.qq.com,🎯 国内网络
+DOMAIN,vd.l.qq.com,🎯 国内网络
+DOMAIN,errlog.umeng.com,🎯 国内网络
+DOMAIN,msg.umeng.com,🎯 国内网络
+DOMAIN,msg.umengcloud.com,🎯 国内网络
+DOMAIN,tracking.miui.com,🎯 国内网络
+DOMAIN,app.adjust.com,🎯 国内网络
+DOMAIN,bdtj.tagtic.cn,🎯 国内网络
+DOMAIN,rewards.hypixel.net,🎯 国内网络
+DOMAIN-SUFFIX,koodomobile.com,🎯 国内网络
+DOMAIN-SUFFIX,koodomobile.ca,🎯 国内网络
+IP-CIDR,161.129.0.0/16,🎯 国内网络,no-resolve
+DOMAIN,blog.cloudflare.com,🎯 国内网络
+DOMAIN,developers.cloudflare.com,🎯 国内网络
+DOMAIN,hostinger.com,🎯 国内网络
+DOMAIN,ahrefs.com,🎯 国内网络
+DOMAIN,ipapi.co,🎯 国内网络
+DOMAIN,ip.sb,🎯 国内网络
+DOMAIN,ip-api.com,🎯 国内网络
+PROCESS-NAME,aria2c.exe,🎯 国内网络
+PROCESS-NAME,fdm.exe,🎯 国内网络
+PROCESS-NAME,Folx.exe,🎯 国内网络
+PROCESS-NAME,NetTransport.exe,🎯 国内网络
+PROCESS-NAME,Thunder.exe,🎯 国内网络
+PROCESS-NAME,Transmission.exe,🎯 国内网络
+PROCESS-NAME,uTorrent.exe,🎯 国内网络
+PROCESS-NAME,WebTorrent.exe,🎯 国内网络
+PROCESS-NAME,WebTorrent Helper.exe,🎯 国内网络
+PROCESS-NAME,qbittorrent.exe,🎯 国内网络
+DOMAIN-SUFFIX,smtp,🎯 国内网络
+DOMAIN-KEYWORD,aria2,🎯 国内网络
+PROCESS-NAME,DownloadService.exe,🎯 国内网络
+PROCESS-NAME,Weiyun.exe,🎯 国内网络
+PROCESS-NAME,baidunetdisk.exe,🎯 国内网络
+#
+# Personal media services.
+DOMAIN-SUFFIX,tsutsu.cloud,🐼 つつ
+DOMAIN-SUFFIX,seto.top,🐼 つつ
+DOMAIN-SUFFIX,mizu.club,🐼 つつ
+DOMAIN-SUFFIX,tsutsu.one,🐼 つつ
+DOMAIN-SUFFIX,tsu.cx,🐼 つつ
+DOMAIN-SUFFIX,cn2gias.uk,EMBY媒体
+DOMAIN-SUFFIX,nebula-media.org,EMBY媒体
+DOMAIN-SUFFIX,challenges.cloudflare.com,🤖 ChatGPT
