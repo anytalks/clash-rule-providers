@@ -1,0 +1,9 @@
+payload:
+  - 'DOMAIN-SUFFIX,github.com'
+  - 'DOMAIN-SUFFIX,githubusercontent.com'
+  - 'DOMAIN-SUFFIX,githubassets.com'
+  - 'DOMAIN-SUFFIX,github.io'
+  - 'DOMAIN-SUFFIX,github.dev'
+  - 'DOMAIN-SUFFIX,githubapp.com'
+  - 'DOMAIN-SUFFIX,githubcopilot.com'
+  - 'DOMAIN-SUFFIX,ghcr.io'
