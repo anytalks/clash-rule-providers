@@ -8,55 +8,64 @@ DOMAIN-SUFFIX,zstaticcdn.com,DIRECT
 DOMAIN-KEYWORD,anytalks,DIRECT
 #
 # Domestic exceptions and local download behavior.
-DOMAIN-SUFFIX,ol.epicgames.com,🎯 国内网络
-DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 国内网络
-DOMAIN,dl.google.com,🎯 国内网络
-DOMAIN-SUFFIX,googletraveladservices.com,🎯 国内网络
-DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 国内网络
-DOMAIN-SUFFIX,tz.anytalks.top,🎯 国内网络
-DOMAIN,origin-a.akamaihd.net,🎯 国内网络
-DOMAIN,fairplay.l.qq.com,🎯 国内网络
-DOMAIN,livew.l.qq.com,🎯 国内网络
-DOMAIN,vd.l.qq.com,🎯 国内网络
-DOMAIN,errlog.umeng.com,🎯 国内网络
-DOMAIN,msg.umeng.com,🎯 国内网络
-DOMAIN,msg.umengcloud.com,🎯 国内网络
-DOMAIN,tracking.miui.com,🎯 国内网络
-DOMAIN,app.adjust.com,🎯 国内网络
-DOMAIN,bdtj.tagtic.cn,🎯 国内网络
-DOMAIN,rewards.hypixel.net,🎯 国内网络
-DOMAIN-SUFFIX,koodomobile.com,🎯 国内网络
-DOMAIN-SUFFIX,koodomobile.ca,🎯 国内网络
-IP-CIDR,161.129.0.0/16,🎯 国内网络,no-resolve
-DOMAIN,blog.cloudflare.com,🎯 国内网络
-DOMAIN,developers.cloudflare.com,🎯 国内网络
-DOMAIN,hostinger.com,🎯 国内网络
-DOMAIN,ahrefs.com,🎯 国内网络
-DOMAIN,ipapi.co,🎯 国内网络
-DOMAIN,ip.sb,🎯 国内网络
-DOMAIN,ip-api.com,🎯 国内网络
-PROCESS-NAME,aria2c.exe,🎯 国内网络
-PROCESS-NAME,fdm.exe,🎯 国内网络
-PROCESS-NAME,Folx.exe,🎯 国内网络
-PROCESS-NAME,NetTransport.exe,🎯 国内网络
-PROCESS-NAME,Thunder.exe,🎯 国内网络
-PROCESS-NAME,Transmission.exe,🎯 国内网络
-PROCESS-NAME,uTorrent.exe,🎯 国内网络
-PROCESS-NAME,WebTorrent.exe,🎯 国内网络
-PROCESS-NAME,WebTorrent Helper.exe,🎯 国内网络
-PROCESS-NAME,qbittorrent.exe,🎯 国内网络
-DOMAIN-SUFFIX,smtp,🎯 国内网络
-DOMAIN-KEYWORD,aria2,🎯 国内网络
-PROCESS-NAME,DownloadService.exe,🎯 国内网络
-PROCESS-NAME,Weiyun.exe,🎯 国内网络
-PROCESS-NAME,baidunetdisk.exe,🎯 国内网络
+DOMAIN-SUFFIX,ol.epicgames.com,国内地址
+DOMAIN-SUFFIX,dizhensubao.getui.com,国内地址
+DOMAIN,dl.google.com,国内地址
+DOMAIN-SUFFIX,googletraveladservices.com,国内地址
+DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,国内地址
+DOMAIN-SUFFIX,tz.anytalks.top,国内地址
+DOMAIN,origin-a.akamaihd.net,国内地址
+DOMAIN,fairplay.l.qq.com,国内地址
+DOMAIN,livew.l.qq.com,国内地址
+DOMAIN,vd.l.qq.com,国内地址
+DOMAIN,errlog.umeng.com,国内地址
+DOMAIN,msg.umeng.com,国内地址
+DOMAIN,msg.umengcloud.com,国内地址
+DOMAIN,tracking.miui.com,国内地址
+DOMAIN,app.adjust.com,国内地址
+DOMAIN,bdtj.tagtic.cn,国内地址
+DOMAIN,rewards.hypixel.net,国内地址
+DOMAIN-SUFFIX,koodomobile.com,国内地址
+DOMAIN-SUFFIX,koodomobile.ca,国内地址
+IP-CIDR,161.129.0.0/16,国内地址,no-resolve
+DOMAIN,blog.cloudflare.com,国内地址
+DOMAIN,developers.cloudflare.com,国内地址
+DOMAIN,hostinger.com,国内地址
+DOMAIN,ahrefs.com,国内地址
+DOMAIN,ipapi.co,国内地址
+DOMAIN,ip.sb,国内地址
+DOMAIN,ip-api.com,国内地址
+PROCESS-NAME,aria2c.exe,国内地址
+PROCESS-NAME,fdm.exe,国内地址
+PROCESS-NAME,Folx.exe,国内地址
+PROCESS-NAME,NetTransport.exe,国内地址
+PROCESS-NAME,Thunder.exe,国内地址
+PROCESS-NAME,Transmission.exe,国内地址
+PROCESS-NAME,uTorrent.exe,国内地址
+PROCESS-NAME,WebTorrent.exe,国内地址
+PROCESS-NAME,WebTorrent Helper.exe,国内地址
+PROCESS-NAME,qbittorrent.exe,国内地址
+DOMAIN-SUFFIX,smtp,国内地址
+DOMAIN-KEYWORD,aria2,国内地址
+PROCESS-NAME,DownloadService.exe,国内地址
+PROCESS-NAME,Weiyun.exe,国内地址
+PROCESS-NAME,baidunetdisk.exe,国内地址
 #
 # Personal media services.
-DOMAIN-SUFFIX,tsutsu.cloud,🐼 つつ
-DOMAIN-SUFFIX,seto.top,🐼 つつ
-DOMAIN-SUFFIX,mizu.club,🐼 つつ
-DOMAIN-SUFFIX,tsutsu.one,🐼 つつ
-DOMAIN-SUFFIX,tsu.cx,🐼 つつ
-DOMAIN-SUFFIX,cn2gias.uk,EMBY媒体
-DOMAIN-SUFFIX,nebula-media.org,EMBY媒体
-DOMAIN-SUFFIX,challenges.cloudflare.com,🤖 ChatGPT
+DOMAIN-SUFFIX,tsutsu.cloud,国外视频
+DOMAIN-SUFFIX,seto.top,国外视频
+DOMAIN-SUFFIX,mizu.club,国外视频
+DOMAIN-SUFFIX,tsutsu.one,国外视频
+DOMAIN-SUFFIX,tsu.cx,国外视频
+DOMAIN-SUFFIX,cn2gias.uk,EmbyTV
+DOMAIN-SUFFIX,nebula-media.org,EmbyTV
+DOMAIN-SUFFIX,challenges.cloudflare.com,ChatGpt
+# GitHub must take priority over the Microsoft provider.
+DOMAIN-SUFFIX,github.com,其他地址
+DOMAIN-SUFFIX,githubusercontent.com,其他地址
+DOMAIN-SUFFIX,githubassets.com,其他地址
+DOMAIN-SUFFIX,github.io,其他地址
+DOMAIN-SUFFIX,github.dev,其他地址
+DOMAIN-SUFFIX,githubapp.com,其他地址
+DOMAIN-SUFFIX,githubcopilot.com,其他地址
+DOMAIN-SUFFIX,ghcr.io,其他地址
