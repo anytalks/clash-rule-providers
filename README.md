@@ -10,6 +10,10 @@ This public repository stores Mihomo rule-provider snapshots and personal routin
 - `rules/sources.tsv` maps each refreshed file to its upstream source.
 - `.github/workflows/sync-rule-providers.yml` has a manual **Sync rule providers** action. Run it from the GitHub Actions page to download the newest upstream snapshots. It does not change personal rules.
 
+## Routing groups
+
+The companion Clash config uses the same 16 routing group names as the local Surge `Default.conf`. GitHub matches `其他地址` before Microsoft rules. Generic foreign proxy rules and unmatched traffic also use `其他地址`; Chinese domain and IP rules retain `国内地址`.
+
 ## Sources
 
 - [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) for compiled MRS geosite and geoip data.
