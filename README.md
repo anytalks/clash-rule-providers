@@ -24,5 +24,3 @@ The companion Clash config uses the same 16 routing group names as the local Sur
 The rules are mirrored from those upstream projects. Please also follow their attribution and licensing terms.
 
 ## Privacy
-
-The public files contain the custom service/domain names listed in `rules/self.list`. Proxy nodes, UUIDs, passwords, and other credentials from the source config are excluded.
