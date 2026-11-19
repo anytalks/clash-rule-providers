@@ -59,7 +59,27 @@ DOMAIN-SUFFIX,tsutsu.one,国外视频
 DOMAIN-SUFFIX,tsu.cx,国外视频
 DOMAIN-SUFFIX,cn2gias.uk,EmbyTV
 DOMAIN-SUFFIX,nebula-media.org,EmbyTV
-DOMAIN-SUFFIX,challenges.cloudflare.com,ChatGpt
+DOMAIN-SUFFIX,challenges.cloudflare.com,AI
+# AI service-specific exceptions (the upstream AI category snapshots cover broader services).
+DOMAIN-SUFFIX,antigravity.google,AI
+DOMAIN,antigravity.googleapis.com,AI
+DOMAIN,antigravity-pa.googleapis.com,AI
+DOMAIN,cloudcode-pa.googleapis.com,AI
+DOMAIN,businessaicode.googleapis.com,AI
+DOMAIN,businessaicode.us.rep.googleapis.com,AI
+DOMAIN,businessaicode.eu.rep.googleapis.com,AI
+DOMAIN,businessaicode.mtls.googleapis.com,AI
+DOMAIN,aiplatform.googleapis.com,AI
+DOMAIN,aiplatform.us.rep.googleapis.com,AI
+DOMAIN,aiplatform.eu.rep.googleapis.com,AI
+DOMAIN,aiplatform.mtls.googleapis.com,AI
+DOMAIN,discoveryengine.googleapis.com,AI
+DOMAIN,us-discoveryengine.googleapis.com,AI
+DOMAIN,eu-discoveryengine.googleapis.com,AI
+DOMAIN,discoveryengine.mtls.googleapis.com,AI
+DOMAIN,us-discoveryengine.mtls.googleapis.com,AI
+DOMAIN,eu-discoveryengine.mtls.googleapis.com,AI
+DOMAIN-SUFFIX,x.ai,AI
 # GitHub must take priority over the Microsoft provider.
 DOMAIN-SUFFIX,github.com,其他地址
 DOMAIN-SUFFIX,githubusercontent.com,其他地址

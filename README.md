@@ -12,6 +12,8 @@ This public repository stores Mihomo rule-provider snapshots and personal routin
 
 ## Routing groups
 
+- `AI` combines the upstream `category-ai-!cn` and `category-ai-cn` snapshots with the custom service endpoints in `rules/self-ai.yaml`. The companion config routes its existing OpenAI, Anthropic, and Gemini providers to the same group.
+
 ## Sources
 
 - [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) for compiled MRS geosite and geoip data.
