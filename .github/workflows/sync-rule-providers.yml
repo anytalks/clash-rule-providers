@@ -20,6 +20,43 @@ jobs:
             mkdir -p "$(dirname "${path}")"
             curl --fail --location --silent --show-error --retry 3 --retry-all-errors "${url}" --output "${path}"
           done < rules/sources.tsv
+      - name: Strip Google entries from non-Google classical rule files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          removals = {
+              "rules/classical/global-media.yaml": {
+                  "  - DOMAIN-KEYWORD,youtube",
+              },
+              "rules/classical/scholar.yaml": {
+                  "  - DOMAIN,scholar.google.com",
+              },
+              "rules/classical/proxy.yaml": {
+                  "  - DOMAIN-KEYWORD,1e100",
+                  "  - DOMAIN-KEYWORD,blogspot",
+                  "  - DOMAIN-KEYWORD,gmail",
+                  "  - DOMAIN-KEYWORD,google",
+                  "  - DOMAIN-KEYWORD,youtube",
+                  "  - IP-CIDR,74.125.0.0/16",
+                  "  - IP-CIDR,173.194.0.0/16",
+                  "  - IP-CIDR,203.208.39.0/24",
+                  "  - IP-CIDR,203.208.40.0/23",
+                  "  - IP-CIDR,203.208.43.0/24",
+                  "  - IP-CIDR,203.208.50.0/24",
+              },
+          }
+
+          for rel, blocked in removals.items():
+              p = Path(rel)
+              if not p.exists():
+                  continue
+              lines = p.read_text(encoding="utf-8").splitlines()
+              filtered = [line for line in lines if line not in blocked]
+              p.write_text("\n".join(filtered) + "\n", encoding="utf-8")
+          PY
       - name: Commit updated snapshots
         shell: bash
         run: |
