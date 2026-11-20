@@ -10,8 +10,6 @@ DOMAIN-KEYWORD,anytalks,DIRECT
 # Domestic exceptions and local download behavior.
 DOMAIN-SUFFIX,ol.epicgames.com,国内地址
 DOMAIN-SUFFIX,dizhensubao.getui.com,国内地址
-DOMAIN,dl.google.com,国内地址
-DOMAIN-SUFFIX,googletraveladservices.com,国内地址
 DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,国内地址
 DOMAIN-SUFFIX,tz.anytalks.top,国内地址
 DOMAIN,origin-a.akamaihd.net,国内地址
@@ -59,26 +57,34 @@ DOMAIN-SUFFIX,tsutsu.one,国外视频
 DOMAIN-SUFFIX,tsu.cx,国外视频
 DOMAIN-SUFFIX,cn2gias.uk,EmbyTV
 DOMAIN-SUFFIX,nebula-media.org,EmbyTV
+# Google ecosystem (including Gemini, Antigravity, Vertex AI, Scholar, and downloads).
+DOMAIN,dl.google.com,Google
+DOMAIN,scholar.google.com,Google
+DOMAIN-SUFFIX,antigravity.google,Google
+DOMAIN,antigravity.googleapis.com,Google
+DOMAIN,antigravity-pa.googleapis.com,Google
+DOMAIN,cloudcode-pa.googleapis.com,Google
+DOMAIN,businessaicode.googleapis.com,Google
+DOMAIN,businessaicode.us.rep.googleapis.com,Google
+DOMAIN,businessaicode.eu.rep.googleapis.com,Google
+DOMAIN,businessaicode.mtls.googleapis.com,Google
+DOMAIN,aiplatform.googleapis.com,Google
+DOMAIN,aiplatform.us.rep.googleapis.com,Google
+DOMAIN,aiplatform.eu.rep.googleapis.com,Google
+DOMAIN,aiplatform.mtls.googleapis.com,Google
+DOMAIN,discoveryengine.googleapis.com,Google
+DOMAIN,us-discoveryengine.googleapis.com,Google
+DOMAIN,eu-discoveryengine.googleapis.com,Google
+DOMAIN,discoveryengine.mtls.googleapis.com,Google
+DOMAIN,us-discoveryengine.mtls.googleapis.com,Google
+DOMAIN,eu-discoveryengine.mtls.googleapis.com,Google
+DOMAIN-SUFFIX,labs.google,Google
+DOMAIN-SUFFIX,notebooklm.google,Google
+DOMAIN-SUFFIX,jules.google.com,Google
+DOMAIN-SUFFIX,opal.google,Google
+#
+# AI service-specific exceptions (non-Google AI services).
 DOMAIN-SUFFIX,challenges.cloudflare.com,AI
-# AI service-specific exceptions (the upstream AI category snapshots cover broader services).
-DOMAIN-SUFFIX,antigravity.google,AI
-DOMAIN,antigravity.googleapis.com,AI
-DOMAIN,antigravity-pa.googleapis.com,AI
-DOMAIN,cloudcode-pa.googleapis.com,AI
-DOMAIN,businessaicode.googleapis.com,AI
-DOMAIN,businessaicode.us.rep.googleapis.com,AI
-DOMAIN,businessaicode.eu.rep.googleapis.com,AI
-DOMAIN,businessaicode.mtls.googleapis.com,AI
-DOMAIN,aiplatform.googleapis.com,AI
-DOMAIN,aiplatform.us.rep.googleapis.com,AI
-DOMAIN,aiplatform.eu.rep.googleapis.com,AI
-DOMAIN,aiplatform.mtls.googleapis.com,AI
-DOMAIN,discoveryengine.googleapis.com,AI
-DOMAIN,us-discoveryengine.googleapis.com,AI
-DOMAIN,eu-discoveryengine.googleapis.com,AI
-DOMAIN,discoveryengine.mtls.googleapis.com,AI
-DOMAIN,us-discoveryengine.mtls.googleapis.com,AI
-DOMAIN,eu-discoveryengine.mtls.googleapis.com,AI
 DOMAIN-SUFFIX,x.ai,AI
 # GitHub must take priority over the Microsoft provider.
 DOMAIN-SUFFIX,github.com,其他地址
