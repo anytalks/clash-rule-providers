@@ -12,7 +12,8 @@ This public repository stores Mihomo rule-provider snapshots and personal routin
 
 ## Routing groups
 
-- `AI` combines the upstream `category-ai-!cn` and `category-ai-cn` snapshots with the custom service endpoints in `rules/self-ai.yaml`. The companion config routes its existing OpenAI, Anthropic, and Gemini providers to the same group.
+- `Google` isolates all Google-ecosystem services (including Gemini, Antigravity, Vertex AI, YouTube, Google FCM, Google Scholar, and Google IPs) by combining `rules/self-google.yaml`, `rules/geosite/google.mrs`, `rules/geosite/google-gemini.mrs`, `rules/geosite/youtube.mrs`, `rules/classical/googlefcm.yaml`, and `rules/geoip/google.mrs`. Google entries are stripped from `rules/self-ai.yaml`, `rules/self-domestic.yaml`, `rules/classical/global-media.yaml`, `rules/classical/scholar.yaml`, and `rules/classical/proxy.yaml` (preserved automatically by the sync workflow). Google ad domains remain in `ads` / `app-clean` for ad blocking.
+- `AI` combines the upstream `category-ai-!cn` and `category-ai-cn` snapshots with the custom non-Google AI endpoints in `rules/self-ai.yaml`. In the companion config, `ChatGpt` routes non-Google AI providers (`self-ai`, OpenAI, Anthropic) after `Google`.
 
 ## Sources
 
