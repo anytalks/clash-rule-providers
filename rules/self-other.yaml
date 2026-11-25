@@ -7,3 +7,6 @@ payload:
   - 'DOMAIN-SUFFIX,githubapp.com'
   - 'DOMAIN-SUFFIX,githubcopilot.com'
   - 'DOMAIN-SUFFIX,ghcr.io'
+  - 'DOMAIN-SUFFIX,gh.io'
+  - 'DOMAIN-SUFFIX,github.ai'
+  - 'DOMAIN-SUFFIX,ghe.com'
