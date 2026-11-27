@@ -1,0 +1,27 @@
+# Auto-generated from rules/surge/self.list — do not edit directly
+IP-CIDR,239.255.255.250/32,no-resolve
+DOMAIN,p9-ad-sign.byteimg.com
+DOMAIN,apmplus.volces.com
+DOMAIN,lvwks.moji.com
+DOMAIN-SUFFIX,sginput.qq.com
+DOMAIN-SUFFIX,mdt.qq.com
+DOMAIN-SUFFIX,e.qq.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN-SUFFIX,byteurl.cn
+DOMAIN-SUFFIX,bdurl.net
+DOMAIN,lf3-short.ibytedapm.com
+DOMAIN,toblog.ctobsnssdk.com
+DOMAIN,v18.toutiaovod.com
+DOMAIN,v26.toutiaovod.com
+DOMAIN,www.bytedance.com
+DOMAIN-SUFFIX,adim.pinduoduo.com
+DOMAIN-SUFFIX,doubleclick-cn.net
+DOMAIN-SUFFIX,get.shouji.sogou.com
+DOMAIN-SUFFIX,in.appcenter.ms
+DOMAIN-SUFFIX,openapi.baidu.com
+DOMAIN,firebase-settings.crashlytics.com
+DOMAIN-SUFFIX,9377.cn

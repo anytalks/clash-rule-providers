@@ -1,0 +1,18 @@
+# Auto-generated from rules/surge/self.list — do not edit directly
+DOMAIN-SUFFIX,anytalks.top
+DOMAIN-SUFFIX,anytalks.net
+DOMAIN-SUFFIX,zstaticcdn.com
+DOMAIN,novel.snssdk.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,ecombdapi.com
+DOMAIN-SUFFIX,moji.com
+IP-CIDR,20.205.38.244/32,no-resolve
+DOMAIN-SUFFIX,nakoemby.com
+DOMAIN-SUFFIX,testflight.apple.com
+DOMAIN,dupay.one
+DOMAIN-SUFFIX,wqmmxs.com
+DOMAIN-SUFFIX,fanqianxs.com
+IP-CIDR,161.129.34.24/32,no-resolve
+DOMAIN-SUFFIX,test-ipv6.com
+DOMAIN-SUFFIX,btschool.club
+DOMAIN-SUFFIX,byd.com

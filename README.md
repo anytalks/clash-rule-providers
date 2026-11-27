@@ -6,6 +6,8 @@ This public repository stores Mihomo rule-provider snapshots and personal routin
 
 - `rules/self.list` is the editable source for custom rules inferred from the original config. It lists each match rule with its route.
 - `rules/self-*.yaml` are the provider payloads consumed by the config. Keep them aligned with `self.list` when changing a custom rule.
+- `rules/surge/self.list` is the editable source for Surge custom rules (`TYPE,VALUE,POLICY[,OPTIONS]`), including Meta/Muse, Google/Antigravity, Emby, and personal routing rules.
+- `rules/surge/self-*.list` are pure-match Surge `RULE-SET` payloads generated from `rules/surge/self.list` (regenerated automatically by the sync workflow), and `rules/surge/url-reject.list` stores migrated `URL-REGEX` ad-blocking rules.
 - `rules/geosite/`, `rules/geoip/`, `rules/classical/`, and `rules/ipcidr/` contain refreshed upstream snapshots.
 - `rules/sources.tsv` maps each refreshed file to its upstream source.
 - `.github/workflows/sync-rule-providers.yml` has a manual **Sync rule providers** action. Run it from the GitHub Actions page to download the newest upstream snapshots. It does not change personal rules.
@@ -18,7 +20,9 @@ This public repository stores Mihomo rule-provider snapshots and personal routin
 ## Sources
 
 - [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) for compiled MRS geosite and geoip data.
-- [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) for GitHub, Microsoft, WeChat, Speedtest, Scholar, proxy, and media rules.
+- [Centralmatrix3/Matrix-io](https://github.com/Centralmatrix3/Matrix-io) for GitHub, Microsoft, WeChat, Speedtest, proxy, and media rules.
+- [Repcz/Tool](https://github.com/Repcz/Tool) for Surge native rule-sets.
+- [dler-io/Rules](https://github.com/dler-io/Rules) for Google FCM and Scholar rules.
 - [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) for app-clean rules.
 - [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules) for application and LAN CIDR lists.
 

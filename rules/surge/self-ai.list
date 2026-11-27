@@ -1,0 +1,5 @@
+# Auto-generated from rules/surge/self.list — do not edit directly
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,x.ai

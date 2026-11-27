@@ -1,0 +1,8 @@
+# Auto-generated from rules/surge/self.list — do not edit directly
+DOMAIN-SUFFIX,idc.wiki
+DOMAIN-SUFFIX,skadsdkless.appsflyer.com
+DOMAIN-SUFFIX,miniworldgame.com
+DOMAIN-SUFFIX,mini1.cn
+DOMAIN-SUFFIX,youme.im
+IP-CIDR,110.238.109.139/32,no-resolve
+IP-CIDR,47.91.206.66/32,no-resolve

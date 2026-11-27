@@ -1,0 +1,5 @@
+# Auto-generated from rules/surge/self.list — do not edit directly
+DOMAIN-SUFFIX,duolingo.com
+IP-CIDR,8.219.108.27/32,no-resolve
+DOMAIN,logpost1.miniworldgame.com
+DOMAIN,logpost2.miniworldgame.com

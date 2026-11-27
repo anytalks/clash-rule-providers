@@ -62,6 +62,55 @@ jobs:
               filtered = [line for line in lines if line not in blocked]
               p.write_text("\n".join(filtered) + "\n", encoding="utf-8")
           PY
+      - name: Build Surge rule-sets from rules/surge/self.list
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          surge_dir = Path("rules/surge")
+          self_list = surge_dir / "self.list"
+          if not self_list.exists():
+              raise SystemExit("rules/surge/self.list not found")
+
+          policy_to_file = {
+              "广告地址": "self-ads.list",
+              "DIRECT": "self-direct.list",
+              "meta": "self-meta.list",
+              "Google": "self-google.list",
+              "ChatGpt": "self-ai.list",
+              "WECHAT": "self-wechat.list",
+              "EmbyTV": "self-emby.list",
+              "国内视频": "self-domestic-media.list",
+              "苹果服务": "self-apple.list",
+              "学术": "self-scholar.list",
+              "其他地址": "self-other.list",
+              "代理选择": "self-proxy.list",
+              "国内地址": "self-domestic.list",
+          }
+
+          buckets = {fname: [] for fname in policy_to_file.values()}
+          for lineno, raw in enumerate(self_list.read_text(encoding="utf-8").splitlines(), 1):
+              s = raw.strip()
+              if not s or s.startswith("#"):
+                  continue
+              parts = [p.strip() for p in s.split(",")]
+              if len(parts) < 3:
+                  raise ValueError(f"Invalid line {lineno}: {s}")
+              rtype, val, policy, *opts = parts
+              if policy not in policy_to_file:
+                  raise ValueError(f"Unknown policy '{policy}' at line {lineno}")
+              payload = ",".join([rtype, val, *opts])
+              fname = policy_to_file[policy]
+              if payload not in buckets[fname]:
+                  buckets[fname].append(payload)
+
+          for fname, entries in buckets.items():
+              header = "# Auto-generated from rules/surge/self.list — do not edit directly\n"
+              content = header + ("\n".join(entries) + "\n" if entries else "")
+              (surge_dir / fname).write_bytes(content.encode("utf-8"))
+          PY
       - name: Commit updated snapshots
         shell: bash
         run: |
